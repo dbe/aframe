@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Connect 4</title>
+    <meta name="description" content="Connect 4">
+    <script src="../../../dist/aframe-master.js"></script>
+    <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script>
+    <script src="components/alert.js"></script>
+  </head>
+  <body>
+    <a-scene stats>
+      <a-assets>
+        <a-asset-item id="connect4Obj" src="assets/connect4_grid.obj"></a-asset-item>
+        <a-asset-item id="connect4Mtl" src="assets/connect4_grid.mtl"></a-asset-item>
+      </a-assets>
+
+      <a-entity laser-controls="hand: left"></a-entity>
+      <a-entity oculus-touch-controls="hand: left"></a-entity>
+      <a-entity laser-controls="hand: right"></a-entity>
+      <a-entity oculus-touch-controls="hand: right"></a-entity>
+
+      <a-entity environment="preset: forest;">
+      </a-entity>
+
+      </a-entity>
+      <a-entity alert="bro: oreo;" ></a-entity>
+
+      <a-entity
+        obj-model=
+          "obj: #connect4Obj;
+           mtl: #connect4Mtl;"
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+
+      <a-entity camera="user-height: 1.6;" look-controls wasd-controls>
+        <a-cursor
+          <!-- intersection-spawn="event: click; mixin: voxel" -->
+        ></a-cursor>
+      </a-entity>
+
+
+    </a-scene>
+  </body>
+</html>

@@ -1,5 +1,3 @@
-console.log(AFRAME);
-
 AFRAME.registerComponent('alert', {
   schema: {
     message: {

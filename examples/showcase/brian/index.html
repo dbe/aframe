@@ -24,7 +24,7 @@
 
 
       <a-entity position="0 0 -10">
-        <!-- <a-torus radius="20" arc="190" rotation="0 90 0">
+        <a-torus radius="20" arc="190" rotation="0 90 0">
           <a-animation attribute="rotation" to="0 450 0" repeat="indefinite" dur="16000" easing="linear"></a-animation>
         </a-torus>
 
@@ -36,7 +36,7 @@
           <a-animation attribute="rotation" to="0 495 0" direction="reverse" repeat="indefinite" dur="16000" easing="linear"></a-animation>
         </a-torus>
 
-        <a-torus radius="20" arc="360" rotation="-90 0 0"></a-torus> -->
+        <a-torus radius="20" arc="360" rotation="-90 0 0"></a-torus>
 
         <a-sky src="#sky" radius="50"></a-sky>
 
@@ -45,10 +45,56 @@
           obj-model="obj: #connect_4_obj;"
           material= "color: #696969;"
           scale="0.25 0.25 0.25"
-          position="0 0 -5"
+          position="0 0 0"
           cursor-listener
         ></a-entity>
 
+        <a-entity
+          static-body
+          obj-model="obj: #connect_4_obj;"
+          material= "color: #696969;"
+          scale="0.25 0.25 0.25"
+          position="1.25 0 0"
+          cursor-listener
+        ></a-entity>
+
+
+        <a-entity
+          static-body
+          obj-model="obj: #connect_4_obj;"
+          material= "color: #696969;"
+          scale="0.25 0.25 0.25"
+          position="2.5 0 0"
+          cursor-listener
+        ></a-entity>
+
+        <a-entity
+          static-body
+          obj-model="obj: #connect_4_obj;"
+          material= "color: #696969;"
+          scale="0.25 0.25 0.25"
+          position="3.75 0 0"
+          cursor-listener
+        ></a-entity>
+
+        <a-entity
+          static-body
+          obj-model="obj: #connect_4_obj;"
+          material= "color: #696969;"
+          scale="0.25 0.25 0.25"
+          position="5 0 0"
+          cursor-listener
+        ></a-entity>
+
+
+        <a-entity
+          static-body
+          obj-model="obj: #connect_4_obj;"
+          material= "color: #696969;"
+          scale="0.25 0.25 0.25"
+          position="6.25 0 0"
+          cursor-listener
+        ></a-entity>
 
         <a-circle rotation="-90 0 0" radius="20" color="#666" position="0 -0.1 0" shadow="receive: true" roughness="1"></a-circle>
       </a-entity>

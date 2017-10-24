@@ -3,12 +3,12 @@ AFRAME.registerComponent('cursor-listener', {
   init: function(){
     var el = this.el;
 
-    this.el.addEventListener('raycaster-intersected', function (evt) {
+    this.el.addEventListener('mouseenter', function (evt) {
       el.setAttribute('material', 'color', '#228b22');
     });
 
     this.el.addEventListener('mouseleave', function (evt) {
-      el.setAttribute('material', 'color', '#69696');
+      el.setAttribute('material', 'color', '#696969');
     });
   }
 });
